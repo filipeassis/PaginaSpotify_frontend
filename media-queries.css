@@ -1,0 +1,18 @@
+/* Media Queries for Responsive Design */
+
+/* When screen width is 1015px or less */
+@media screen and (max-width: 1015px) {
+    /* Ensure the container is a grid and update its columns */
+    .offer__list-item {
+        display: grid; /* Ensure the element is a grid container */
+        grid-template-columns: 1fr 1fr; /* 2 columns layout */
+    }
+}
+
+/* You may want to add more breakpoints for other sizes */
+@media screen and (max-width: 768px) {
+    /* Adjustments for even smaller screens */
+    .offer__list-item {
+        grid-template-columns: 1fr; /* 1 column layout */
+    }
+}
